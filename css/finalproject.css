@@ -1,7 +1,6 @@
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -129,14 +128,6 @@ h4 {
     margin: 3rem auto;
 }
 
-.x:after {
-    content: '';
-    border-bottom: 2px solid rgb(255, 255, 255);
-    display: block;
-    width: 10%;
-    margin: 3rem auto;
-}
-
 h2 {
     position: relative;
 }
@@ -229,10 +220,6 @@ h2 {
 
 /* ocoord */
 
-.services {
-    padding-top: 8%;
-}
-
 .slider {
     background-color: #f8f8f8;
     padding: 3rem 10rem;
@@ -275,64 +262,12 @@ h2 {
     background-color: #f8f8f8;
 }
 
+.img-circle {
+    border-radius: 50%
+}
+
 
 /* test */
-
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
-}
-
-
-/* Control buttons  */
-
-#quote-carousel .carousel-control {
-    background: none;
-    color: #222;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 30px;
-}
-
-
-/* Previous button  */
-
-#quote-carousel .carousel-control.left {
-    left: -12px;
-}
-
-
-/* Next button  */
-
-#quote-carousel .carousel-control.right {
-    right: -12px !important;
-}
-
-
-/* Changes the position of the indicators */
-
-#quote-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
-}
-
-
-/* Changes the color of the indicators */
-
-#quote-carousel .carousel-indicators li {
-    background: #c0c0c0;
-}
-
-#quote-carousel .carousel-indicators .active {
-    background: #333333;
-}
-
-#quote-carousel img {
-    width: 250px;
-    height: 100px;
-}
 
 
 /* End carousel */
@@ -345,19 +280,6 @@ h2 {
 .item blockquote img {
     margin-bottom: 10px;
 }
-
-
-/* .item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
-    float: left;
-    margin-right: 10px;
-} */
-
-
-/**
-  MEDIA QUERIES
-*/
 
 
 /* Small devices (tablets, 768px and up) */
@@ -476,19 +398,17 @@ h2 {
     margin-bottom: 12px;
 }
 
-.redx:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 2px;
-    background: #f38181;
-}
-
 
 /* map */
 
 .map {
     background-image: url("../assets/bg-map.jpg");
+}
+
+.unique__design h2:after {
+    content: '';
+    border-bottom: 2 px solid rgb(245, 89, 89);
+    display: block;
+    width: 10%;
+    margin: 1 em auto;
 }
