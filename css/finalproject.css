@@ -24,6 +24,9 @@ h1 {
 }
 
 h2 {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
     font-size: 1.8em;
 }
 
@@ -104,22 +107,6 @@ h4 {
     padding: .2rem 2rem;
 }
 
-.about_us h2:after {
-    content: '';
-    border-bottom: 2px solid rgb(245, 89, 89);
-    display: block;
-    width: 10%;
-    margin: 1em auto;
-}
-
-.section_border h2:after {
-    content: '';
-    border-bottom: 2px solid rgb(245, 89, 89);
-    display: block;
-    width: 10%;
-    margin: 1em auto;
-}
-
 .x:after {
     content: '';
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -128,8 +115,17 @@ h4 {
     margin: 3rem auto;
 }
 
+.xred:after {
+    content: '';
+    border-bottom: 2px solid rgb(245, 89, 89);
+    display: block;
+    width: 50%;
+    margin: 3rem auto;
+}
+
 h2 {
     position: relative;
+    display: inline-block
 }
 
 .imge_items {
@@ -221,8 +217,13 @@ h2 {
 /* ocoord */
 
 .slider {
-    background-color: #f8f8f8;
-    padding: 3rem 10rem;
+    padding: 6rem 17rem;
+}
+
+.slider1 {
+    font-size: 3rem;
+    padding: 6rem 17rem;
+    background-color: rgb(235, 237, 240);
 }
 
 
@@ -279,37 +280,6 @@ h2 {
 
 .item blockquote img {
     margin-bottom: 10px;
-}
-
-
-/* Small devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-    #quote-carousel {
-        margin-bottom: 0;
-        padding: 0 40px 30px 40px;
-    }
-}
-
-
-/* Small devices (tablets, up to 768px) */
-
-@media (max-width: 768px) {
-    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-    #quote-carousel .carousel-indicators {
-        bottom: -20px !important;
-    }
-    #quote-carousel .carousel-indicators li {
-        display: inline-block;
-        margin: 0px 5px;
-        width: 15px;
-        height: 15px;
-    }
-    #quote-carousel .carousel-indicators li.active {
-        margin: 0px 5px;
-        width: 20px;
-        height: 20px;
-    }
 }
 
 
@@ -405,36 +375,18 @@ h2 {
     background-image: url("../assets/bg-map.jpg");
 }
 
-.unique__design h2:after {
-    content: '';
-    border-bottom: 2 px solid rgb(245, 89, 89);
-    display: block;
-    width: 10%;
-    margin: 1 em auto;
+
+/* footer */
+
+.footer .links ul {
+    list-style-type: none;
 }
 
-
-/* 
- */
-
-img {
-    width: 100%;
+.footer .links li a {
+    color: black;
+    transition: color 0.2s;
 }
 
-h2 {
-    position: relative;
-    margin-bottom: 40px;
-    text-align: center;
+.footer a {
+    font-size: 2rem;
 }
-
-
-/* h2::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 80px;
-    background-color: red;
-    left: 50%;
-    bottom: -20px;
-    transform: translateX(-50%);
-} */
