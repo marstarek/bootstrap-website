@@ -196,12 +196,11 @@ h2 {
 
 /*imag  */
 
-.unique__design {
+.unique_design {
     background-image: url("../assets/bg1.jpg");
-    /* height: 95vh; */
 }
 
-.unique__img img {
+.unique_img img {
     width: 85%;
 }
 
@@ -226,19 +225,19 @@ h2 {
 
 /* test */
 
-.accordion__item {
+.accordion_item {
     height: 14rem;
 }
 
-.accordion__header {
+.accordion_header {
     width: 100%;
 }
 
-.occ__icon {
+.accordion_icons {
     color: #95e1d4;
 }
 
-.Quote__author {
+.Uname {
     font-family: "Birthstone";
     color: #222;
     font-size: 1.5rem;
@@ -246,7 +245,7 @@ h2 {
     padding-left: 3rem;
 }
 
-.Quote__author::before {
+.Uname::before {
     content: "";
     position: absolute;
     width: 3rem;
@@ -364,10 +363,6 @@ h2 {
 
 
 /* laste blog */
-
-.latestBlog .latestBlog_img img {
-    width: 100%;
-}
 
 .latestBlog .latestBlog_span {
     position: absolute;
