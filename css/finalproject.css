@@ -10,9 +10,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-/* font-family: 'Birthstone', cursive; */
-
 h1,
 h2 {
     font-weight: 500;
@@ -200,7 +197,7 @@ h2 {
 /*imag  */
 
 .unique__design {
-    background-image: url("../assets/unique-design/bg1.jpg");
+    background-image: url("../assets/bg1.jpg");
     /* height: 95vh; */
 }
 
@@ -339,11 +336,6 @@ h2 {
     margin-top: 1rem;
     font-weight: bold;
 }
-
-
-/* .gallary img {
-    width: 100%;
-} */
 
 .happy_clients {
     background: url(../assets/bg-happy-client.jpg) no-repeat center center / cover;
