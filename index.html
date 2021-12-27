@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,400;1,700;&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/finalproject.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>final project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <section class="mynavbar ">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fw-light fs-6">
+            <div class="container">
+                <a class="navbar-brand fw-bolder fs-3  ">MARS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                    <ul class="nav-items navbar-nav ms-auto">
+                        <li class=" nav-item mx-3">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " href="#">Features</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item mx-3 ">
+                            <a class="nav-link " href="#">About US</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " onclick=setAr() href="#">AR</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link " href="#" onclick=setEr()>EN</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <i class=" nav-link  bi bi-bag-check"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions " class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators justify-content-evenly">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active mx-2 w-25 " aria-current="true" aria-label="Slide 1"></button>
+                <!--  -->
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=" w-25  mx-2"></button>
+                <!--  -->
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=" mx-2 w-25 text-left ">
+                </button>
+                <!--  -->
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4" class="w-25  mx-2"></button>
+            </div>
+            <div class="carousel-inner my-sm-1 ">
+                <div class="carousel-item active">
+                    <img src="./assets/overlay.png" class="opacit d-block w-100" alt="...">
+                    <div class="carousel-caption  car_inner_items">
+                        <h4>Creative Template</h4>
+                        <h1 class="x d-none d-lg-block ">WELCOME TO MARS </h1>
+                        <button class="button-6  m-lg-4  " role="button">Button 6</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/overlay.png" class="opacit d-block w-100" alt="...">
+                    <div class="carousel-caption car_inner_items">
+                        <h4>Creative Website</h4>
+                        <h1 class="x d-none d-lg-block">WELCOME TO MARS </h1>
+                        <button class="button-6 m-lg-4 " role="button">Button 6</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/overlay.png" class="opacit d-block w-100" alt="...">
+                    <div class="carousel-caption  car_inner_items">
+                        <h4>Creative Website</h4>
+                        <h1 class="x d-none d-lg-block ">WELCOME TO MARS </h1>
+                        <button class="button-6  m-lg-4 " role="button">Button 6</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/overlay.png" class="opacit d-block w-100" alt="...">
+                    <div class="carousel-caption car_inner_items">
+                        <h4>Creative Website</h4>
+                        <h1 class="x d-none d-lg-block">WELCOME TO MARS 4</h1>
+                        <button class="button-6  m-lg-4 " role="button">Button 6</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- about_us -->
+    <section class="about_us headind-mar-top">
+        <div class="container">
+            <div class="row">
+                <div class="about_us_holder text-center ">
+                    <h4>We Work With</h4>
+                    <h2 class="xred my-3 fw-bold">STORY ABOUT US!!</h2>
+                    <p class="mx-5  px-lg-5"> Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+                </div>
+            </div>
+            <div class="row imge_items ">
+                <div class="col-lg-4  my-2">
+                    <div class="imge-item">
+                        <img class='img-fluid' src="./assets/about1.png" alt="">
+                        <div class='overlay'>
+                            <div class='overlay-content'>
+                                <i class="bi bi-person"></i>
+                                <div>Super Team</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="imge-item">
+                        <img class='img-fluid' src="./assets/about2.png" alt="">
+                        <div class='overlay'>
+                            <div class='overlay-content'>
+                                <i class="bi bi-person"></i>
+                                <div>Super Team</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="imge-item">
+                        <img class='img-fluid' src="./assets/about3.png" alt="">
+                        <div class='overlay'>
+                            <div class='overlay-content'>
+                                <i class="bi bi-person"></i>
+                                <div>Super Team</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- counter -->
+    <section class="counter headind-mar-top">
+        <div class="container">
+            <div class=" counter_items  row text-center">
+                <div class="col-lg">
+                    <h1>10</h1>
+                    <h6>story about</h6>
+                </div>
+                <div class="col-lg">
+                    <h1>25</h1>
+                    <h6>story about</h6>
+
+                </div>
+                <div class="col-lg">
+                    <h1>30</h1>
+                    <h6>story about</h6>
+
+                </div>
+                <div class="col-lg">
+                    <h1>18</h1>
+                    <h6>story about</h6>
+
+                </div>
+                <div class="col">
+                    <h1>15</h1>
+                    <h6>story about</h6>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="services headind-mar-top section_border">
+        <div class="container">
+            <div class="about_us_holder text-center ">
+                <h4>Creative Website</h4>
+                <h2 class="xred my-3 fw-bold">Amazing service!</h2>
+            </div>
+
+            <div class="servise_items">
+                <div class="row r1 pb-4">
+                    <div class="col-lg-4 item ">
+                        <div class="servise-icon">
+                            <i class="bi bi-bank"></i>
+                        </div>
+                        <div>
+                            <h3 class="servise_header
+                            ">Photography</h3>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary .</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item ">
+                        <div class="servise-icon">
+                            <i class="bi bi-box"></i>
+                        </div>
+                        <div>
+                            <h3 class="servise_header
+                            ">Photography</h3>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary .</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item ">
+                        <div class="servise-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <div>
+                            <h3 class="servise_header
+                            ">Photography</h3>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary .</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row r2 pt-4 border-top">
+                    <div class="col-lg-4 item ">
+                        <div class="servise-icon">
+                            <i class="bi bi-bug"></i>
+                        </div>
+                        <div>
+                            <h3 class="servise_header
+                            ">Photography</h3>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary .</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item ">
+                        <div class="servise-icon">
+                            <i class="bi bi-cart"></i>
+                        </div>
+                        <div>
+                            <h3 class="servise_header
+                            ">Photography</h3>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary .</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 item ">
+                        <div class="servise-icon">
+                            <i class="bi bi-caret-left-square"></i>
+                        </div>
+                        <div>
+                            <h3 class="servise_header
+                            ">Photography</h3>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- imag -->
+    <section class=" about_us unique_design my-5 d-flex flex-column align-items-center position-relative">
+        <div class=" py-5 d-flex align-items-center flex-column ">
+            <h4 class="unique_h4 text-center text-capitalize fs-3 mt-3 ">for all devices</h4>
+            <h2 class=" xred unique_h2  position-relative text-center te text-capitalize  fs-2 fw-bolder about_us_h2 position-relative pb-3">Unique Design
+            </h2>
+
+        </div>
+        <figure class="unique_img  d-flex justify-content-center m-0 d-none d-lg-block"><img src="./assets/img-1.png" alt="">
+        </figure>
+        <figure class="position-absolute unique_secondary_img d-none d-lg-block"><img src="./assets/img-2.png " alt="">
+        </figure>
+    </section>
+
+    <!-- end of imag -->
+    </section>
+    <section class="d-lg-none my-5 ">
+        <figure class="mx-auto">
+            <img class="mx-auto w-100" src="./assets/display bg 768x1024.png" alt="">
+        </figure>
+    </section>
+
+    <!-- ocordion -->
+    <!-- services -->
+    <section class="about_us container pb-5 my-5 py-5 d-none d-lg-block">
+        <div class="services d-flex align-items-center flex-column about_us_header ">
+            <div class="about_us_holder text-center ">
+                <h4>We Work With</h4>
+                <h2 class="xred my-3 fw-bold">ًWHAT WE DO</h2>
+                <p class="mx-5 mb-5  px-lg-5"> Est voluptatem occaecati adipisci quo quisquam dolorem delectus. Saepe quia quia cumque. Dolores a nobis ea ea mollitia quo suscipit et. Est sint sed dolor excepturi aut quia. A cumque sed consectetur occaecati et praesentium eaque.</p>
+            </div>
+        </div>
+        <div class=" row">
+
+            <figure class="  d-none d-xl-block col-6 p-0"><img class="w-100" src="./assets/ocors.jpg" alt=""></figure>
+            <div class="  d-none d-xl-block col-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header accordion_header " id="headingOne">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="bi bi-twitter me-2 accordion_icons"></i>
+                            Exercitation
+                        </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+                            <div class="accordion-body overflow-scroll accordion_item">
+
+                                Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available. The training will require you to execute certain
+                                commands. Make sure to practice them accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is as
+                                good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available. The training will require you to execute certain commands. Make sure to practice them
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header accordion_header" id="headingTwo">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="bi bi-github me-2 accordion_icons "></i>
+                                Reprehenderit
+                        </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body overflow-scroll accordion_item">
+
+                                Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available. The training will require you to execute certain
+                                commands. Make sure to practice them accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is as
+                                good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available. The training will require you to execute certain commands. Make sure to practice them
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header accordion_header" id="headingThree">
+                                <button class="accordion-button collapsed occ_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="bi bi-discord me-2 accordion_icons"></i>
+                                Reprehenderit
+
+                        </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body overflow-scroll accordion_item">
+
+                                    Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available. The training will require you to execute certain
+                                    commands. Make sure to practice them accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is
+                                    as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available. The training will require you to execute certain commands. Make sure to practice them
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- slider quote  -->
+    <!-- slider -->
+    <section class=" d-none d-lg-block slider1 text-muted">
+        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active row ">
+
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-center">
+                                    <img class="img-circle" src="./assets/client (1).jpg" style="width: 150px;height:150px;">
+                                </div>
+                                <div class="col-sm-12 col-xl-8 p-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium maurisLorem ipsum dolor sit amet, consectetur adipiscing
+
+                                    </p>
+                                    <p class="Uname position-relative text-muted">Tarek Ahmed</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item row ">
+
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-center">
+                                    <img class="img-circle" src="./assets/client (2).jpg" style="width: 150px;height:150px;">
+                                </div>
+                                <div class="col-sm-12 col-xl-8 p-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                    <p class="Uname position-relative text-muted">sabry</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-center">
+                                    <img class="img-circle" src="./assets/client (3).jpg" style="width: 150px;height:150px;">
+                                </div>
+                                <div class="col-sm-12 col-xl-8 p-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                    <p class="Uname position-relative text-muted">hosny</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                    <span class="visually-hidden mx-5 ">Previous</span>
+                </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+
+
+    <!-- overlay -->
+    <section class="about_us headind-mar-top section_border d-none d-lg-block">
+        <div class="container">
+            <div class="about_us_holder text-center ">
+                <h4>Creative Website</h4>
+                <h2 class="xred my-3 fw-bold">Meet Our Team</h2>
+                <p class="mx-5 mb-5  px-lg-5">Saepe blanditiis quia repudiandae natus expedita quia. Ipsum delectus qui animi ea saepe qui qui. Voluptatem sint hic eum dolores. Eveniet occaecati odio est consequatur sed laboriosam perspiciatis odit.</p>
+            </div>
+            <div class="row">
+                <div class="row imge_items text-center ">
+                    <div class="col-4">
+                        <div class="imge-item2">
+                            <img class='inner_imge img-fluid' src="./assets/p2.jpg" alt="">
+                            <div class='overlay2'>
+                                <div class='overlay-content2'>
+                                    <span>
+                                        <i class="bi bi-google"></i>
+                                        <i class="bi bi-telegram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-linkedin"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_us_item_contant">
+                            <h3>Tarek Ahmed</h3>
+                            <p>front end developer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="imge-item2">
+                            <img class='inner_imge img-fluid' src="./assets/p1 (1).jpg" alt="">
+                            <div class='overlay2'>
+                                <div class='overlay-content2'>
+                                    <span>
+                                        <i class="bi bi-google"></i>
+                                        <i class="bi bi-telegram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-linkedin"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_us_item_contant">
+                            <h3>Tarek Ahmed</h3>
+                            <p>front end developer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="imge-item2">
+                            <img class='inner_imge img-fluid' src="./assets/p2.jpg" alt="">
+                            <div class='overlay2'>
+                                <div class='overlay-content2'>
+                                    <span>
+                                        <i class="bi bi-google"></i>
+                                        <i class="bi bi-telegram"></i>
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-linkedin"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about_us_item_contant">
+                            <h3>Tarek Ahmed</h3>
+                            <p>front end developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- logos sec -->
+    <div class="logos  d-none d-lg-block py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <figure class="col">
+                    <img src="./assets/brand (1).png" alt="">
+                </figure>
+                <figure class="col">
+                    <img src="./assets/brand (2).png" alt="">
+                </figure>
+                <figure class="col">
+                    <img src="./assets/brand (3).png" alt="">
+                </figure>
+                <figure class="col">
+                    <img src="./assets/brand (4).png" alt="">
+                </figure>
+                <figure class="col">
+                    <img src="./assets/brand (5).png" alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- images  -->
+    <section class="our_work py-5">
+        <div>
+            <div class="our_work_holder text-center px-5 my-5 ">
+                <h4>Creative Website</h4>
+                <h2 class="xred my-3 fw-bold">SOME OF OUR WORK
+                </h2>
+                <p class="mx-5 mb-5  px-lg-5">Saepe blanditiis quia repudiandae natus expedita quia. Ipsum delectus qui animi ea saepe qui qui. Voluptatem sint hic eum dolores. Eveniet occaecati odio est consequatur sed laboriosam perspiciatis odit.</p>
+            </div>
+            <div class="row g-0">
+                <div class="row mx-auto col-lg-6 g-0">
+                    <img src="./assets/img-1.jpg" alt="" class="col-md-6" />
+                    <img src="./assets/img-2.jpg" alt="" class="col-md-6" />
+                    <img src="./assets/img-5.jpg" alt="" class="col-md-6" />
+                    <img src="./assets/img-6.jpg" alt="" class="col-md-6" />
+                </div>
+                <div class="row mx-auto col-lg-6 g-0">
+                    <div class="col-md-6  ">
+                        <img src="./assets/img-3.jpg" alt="" class=" col-sm-12" />
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/img-4.jpg" alt="" class=" col-sm-12" />
+                        <img src="./assets/img-7.jpg" alt="" class=" col-sm-12" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <!-- second-slider -->
+    <section class=" d-none d-lg-block slider text-muted">
+        <div class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active row ">
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-center">
+                                    <img class="img-circle" src="assets/Layer 36.png" style="width: 150px;height:150px;">
+                                </div>
+                                <div class="col-sm-12 col-xl-8 p-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                    <p class="Uname position-relative text-muted">Tarek Ahmed</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-center">
+                                    <img class="img-circle" src="assets/Layer 36.png" style="width: 150px;height:150px;">
+                                </div>
+                                <div class="col-sm-12 col-xl-8 p-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                    <p class="Uname position-relative text-muted">Tarek Ahmed</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="carousel-item row">
+                    <div class="item">
+                        <blockquote>
+                            <div class="row justify-content-end">
+                                <div class="col-sm-3 text-center">
+                                    <img class="img-circle" src="assets/Layer 36.png" style="width: 150px;height:150px;">
+                                </div>
+                                <div class="col-sm-12 col-xl-8 p-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                    </p>
+                                    <p class="Uname position-relative text-muted">Tarek Ahmed</p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#second_carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#second_carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+    <!--happy_clients  -->
+    <section class="happy_clients  section_border">
+        <div class="container">
+            <div class="happy_clients_holder text-center py-5 ">
+                <h4>Creative Website</h4>
+                <h2 class=" xred my-3 fw-bold x ">Happy Clients</h2>
+            </div>
+            <!-- items -->
+            <div class="happy_clients_items row justify-content-center ">
+                <div class="row  mb-5">
+                    <div class="col-md-6 mb-3  ">
+                        <div class="row  item ">
+                            <div class=" col-md-3   happy_clients_img ">
+                                <img class="img-circle" src="./assets/client (1).jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-6  info">
+                                <h3 class="fw-bold">Tarek Ahmed</h3>
+                                <span class="redx">web designer</span>
+                                <p>
+                                    Linux is the most popular server OS. Linux is a clone of UNIX. Knowing one is as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="row  item ">
+                            <div class=" col-md-3   happy_clients_img ">
+                                <img class="img-circle" src="./assets/client (1).jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-6 info">
+                                <h3 class="fw-bold">Tarek Ahmed</h3>
+                                <span class="redx">web designer</span>
+                                <p>
+                                    The training will require you to execute certain commands. Make sure to practice them accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboarddolor brunch.Linux is
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row r2">
+                    <div class="col-md-6 ">
+                        <div class="row  item ">
+                            <div class=" col-md-3   happy_clients_img ">
+                                <img class="img-circle" src="./assets/client (3).jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-6 info">
+                                <h3 class="fw-bold">Sabry mohamed</h3>
+                                <span class="  redx">web designer</span>
+                                <p>
+                                    the most popular server OS. Linux is a clone of UNIX. Knowing one is as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="row  item ">
+                            <div class=" col-md-3   happy_clients_img ">
+                                <img class="img-circle" src="./assets/client (4).jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-6 info">
+                                <h3 class="fw-bold">Asmaa ahmed</h3>
+                                <span class="redx">web designer</span>
+                                <p>
+                                    the most popular server OS. Linux is a clone of UNIX. Knowing one is as good as knowing the other. In this UNIX / Linux tutorial for beginners series, we will be using Linux as it’s freely available
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Latest Blog -->
+    <section class="latestBlog my-5 py-3">
+        <div class="container">
+            <div class="latestBlog_holder text-center px-5 my-5 ">
+                <h4>Creative Website</h4>
+                <h2 class="xred my-3 fw-bold">LATEST BLOG
+
+                </h2>
+            </div>
+            <div class="Content">
+                <div class="row">
+                    <!-- latestBlog item -->
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div>
+                            <div class="latestBlog_img mb-3 position-relative">
+                                <img src="./assets/latest-blog1.png" alt="" class="w-100">
+                                <div class="latestBlog_span">
+                                    <span class="num d-block fw-bolder fs-3 ">3</span>
+                                    <span class="username d-block fw-normal fs-5">Tarek</span>
+                                </div>
+                            </div>
+                            <h3 class="latestBlog_Title">Linux is a clone of UNIX.</h3>
+                            <p>
+                                Linux tutorial for beginners series, we will be using Linux as it’s freely available.using Linux as it’s freely available
+                            </p>
+                            <div class="latestBlog_icons">
+                                <sapn> <i class="bi bi-eye-fill"></i> 600 </sapn>
+                                <sapn><i class="bi bi-chat-quote"></i> 33</sapn>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- latestBlog item end -->
+                    <!-- latestBlog item -->
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div>
+                            <div class="latestBlog_img mb-3 position-relative">
+                                <img src="./assets/latest-blog3.png" alt="" class="w-100">
+                                <div class="latestBlog_span">
+                                    <span class="num d-block fw-bolder fs-3 ">3</span>
+                                    <span class="username d-block fw-normal fs-5">Tarek</span>
+                                </div>
+                            </div>
+                            <h3 class="latestBlog_Title">Linux is a clone of UNIX.</h3>
+                            <p>
+                                Linux tutorial for beginners series, we will be using Linux as it’s freely available.using Linux as it’s freely available
+                            </p>
+                            <div class="latestBlog_icons">
+                                <sapn> <i class="bi bi-eye-fill"></i> 600 </sapn>
+                                <sapn><i class="bi bi-chat-quote"></i> 33</sapn>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- latestBlog item end -->
+                    <!-- latestBlog item -->
+                    <div class="col-md-4 col-sm-12 mb-4">
+                        <div>
+                            <div class="latestBlog_img mb-3 position-relative">
+                                <img src="./assets/latest-blog3.png" alt="" class="w-100">
+                                <div class="latestBlog_span">
+                                    <span class="num d-block fw-bolder fs-3 ">13</span>
+                                    <span class="username d-block fw-normal fs-5">Tarek</span>
+                                </div>
+                            </div>
+                            <h3 class="latestBlog_Title">Linux is a clone of UNIX.</h3>
+                            <p>
+                                Linux tutorial for beginners series, we will be using Linux as it’s freely available.using Linux as it’s freely available
+                            </p>
+                            <div class="latestBlog_icons">
+                                <sapn> <i class="bi bi-eye-fill"></i> 600 </sapn>
+                                <sapn><i class="bi bi-chat-quote"></i> 33</sapn>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- latestBlog item end -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#nino-latestBlog-->
+    <!-- map  -->
+    <section class="map  flex-column  align-items-center text-danger d-none d-lg-flex mt-2 ">
+        <p class="pt-5">
+            <i class="fas fa-map-marker-alt fa-2x "></i>
+        </p>
+        <h2 class=" xred position-relative pb-1">OPEN MAP</h2>
+    </section>
+
+
+    <!-- footer -->
+    <div class=" pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 ">
+                    <h2 class="text-danger fs-1 fw-b ">Mars</h2>
+                    <p class="pr-5  text-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis dipiscing Nullam ac ante mollis quam tristique convallis elitconvallis dipiscing Nullam ac ante mollis quam tristique convallis
+                        elit. </p>
+                    <br>Follow Me <br> <a href="https://github.com/marstarek"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/tarek-ahmed-89b403190/"><i class="bi bi-linkedin"></i></a> <a href="#"><i class="bi bi-google"></i></a>                    <a href="https://www.facebook.com/tarekahmed9368/"><i class="bi bi-facebook"></i></a> </p>
+                    <form class="">
+                        <div class="input-group ">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <span class="input-group-btn">
+                    <button class="btn btn-light footer_btn" type="submit" >contact me</button>
+                </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h2 class="mt-lg-0 mt-sm-3  fs-3 mb-1">BLOGS</h2>
+                    <ul class="m-0 p-0">
+                        <li>
+                            <div class='d-flex justify-content-center '>
+                                <img class="mb-4  me-2" src="./assets/inst1.png" alt="blog">
+                                <p class="text-dark"> Nullam ac ante mollis quam tristique convallis dipiscing Nullam ac ante mollis
+                                    <strong><span>3/3/2021</span></strong>
+                                </p>
+
+
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class='d-flex justify-content-center '>
+                                <img class="mb-4  me-2" src="./assets/inst3.png" alt="blog">
+                                <p class="text-dark"> Nullam ac ante mollis quam tristique convallis dipiscing Nullam ac ante mollis
+                                    <strong><span>3/3/2021</span></strong>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='d-flex justify-content-center '>
+                                <img class="mb-4  me-2" src="./assets/inst2.png" alt="blog">
+                                <p class="text-dark"> Nullam ac ante mollis quam tristique convallis dipiscing Nullam ac ante mollis
+                                    <strong><span>3/3/2021</span></strong>
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12 ">
+                    <h2 class="mt-lg-0 mt-sm-3  fs-3 mb-1">INSTAGRAM</h2>
+                    <div class="row gap-0">
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst4.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst5.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst6.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst7.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst5.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst6.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst7.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst8.png" alt="blog">
+
+                        </div>
+                        <div class="col-4">
+                            <img class="m-1" src="./assets/inst9.png" alt="blog">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/finalproject.js"></script>
+
+</body>
+
+</html>
